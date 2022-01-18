@@ -1,0 +1,310 @@
+//---------------------------------------
+// PATRONES DE COLORES
+//---------------------------------------
+
+$primario: #ff556d;
+$secundario: #1597b0;
+$terciario: #2f3f63;
+$fondo: #fefffe;
+$texto: #424761;
+
+//---------------------------------------
+// ESTILOS BODY
+//---------------------------------------
+
+body {
+  background-color: $fondo;
+  color: $texto;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-primario {
+  background-color: $primario;
+}
+.bg-secundario {
+  background-color: $secundario;
+}
+.bg-terciario {
+  background-color: $terciario;
+}
+.bg-fondo {
+  background-color: $fondo;
+}
+.color-primario {
+  color: $primario;
+}
+.color-secundario {
+  color: $secundario;
+}
+.color-terciario {
+  color: $terciario;
+}
+.color-texto {
+  color: $texto;
+}
+.color-fondo {
+  color: $fondo;
+}
+.redondeo {
+  border-radius: 15px;
+  border: none;
+  box-shadow: transparent !important;
+}
+
+.boton {
+  background-color: $secundario !important;
+  color: $fondo;
+  padding: 5px 15px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.boton:hover {
+  background-color: $fondo !important;
+  color: $secundario;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: $fondo;
+}
+
+//---------------------------------------
+// Navbar
+//---------------------------------------
+
+.logo-brand {
+  max-width: 5% !important;
+}
+@media only screen and(max-width: 540px) {
+  .logo-brand {
+    max-width: 35% !important;
+  }
+}
+
+@media only screen and(max-width: 720px) {
+  .logo-brand {
+    max-width: 35% !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .logo-brand {
+    max-width: 15% !important;
+  }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/assets/img/menu.png") !important;
+  border-color: transparent !important;
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  border-color: transparent !important;
+  border: none !important;
+  box-shadow: transparent !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: transparent !important;
+  border-color: transparent !important;
+  border: none !important;
+}
+
+.btn-close {
+  background-image: url("/assets/img/close.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+  display: inline-block !important;
+}
+
+//---------------------------------------
+// Sección 1 Hero
+//---------------------------------------
+
+.hero1 {
+  height: 80vh;
+  background-image: url("/assets/img/hero/hero1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial;
+}
+
+.hero2 {
+  height: 80vh;
+  background-image: url("/assets/img/hero/hero2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial;
+}
+
+.hero3 {
+  height: 80vh;
+  background-image: url("/assets/img/hero/hero3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial;
+}
+
+.bg-hero {
+  height: 650px;
+}
+
+//---------------------------------------
+// Sección 3 Marcas -- Red
+//---------------------------------------
+.marcas {
+  display: flex;
+
+  /* Put a card in the next row when previous cards take all width */
+  flex-wrap: wrap;
+
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.marcas__item {
+  /* There will be 4 cards per row */
+  flex-basis: 25%;
+
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+//---------------------------------------
+// Sección 3 Marcas -- Banner
+//---------------------------------------
+
+.banner {
+  overflow: hidden;
+}
+
+.banner-contenedor {
+  display: flex;
+  animation: scroll 25s linear infinite;
+}
+
+.banner-items {
+  flex: 0 0 16vw;
+  margin: 0 1vw;
+}
+
+.banner-items img {
+  display: block;
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  //---------------------------------------
+  // Regla para el vw al 100%
+  // a) Cuantos elemetos hay en el banner  Ejemplo   12 Elementos
+  // b) Multiplican los elementos del banner X 2   Ejemplo    12 X 2 = 24
+  // c) El resultado se multiplica pX -9    Ejemplo    24 X  -9 =  216
+  //-------
+
+  100% {
+    transform: translateX(-216vw);
+  }
+}
+
+//---------------------------------------
+// Sección 4 Servicios
+//---------------------------------------
+
+.servicio {
+  position: relative;
+}
+
+.postit {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: $fondo;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  border-radius: 15px;
+  padding: 5px 20px;
+  min-height: 50%;
+  width: 90%;
+  max-width: 90%;
+}
+
+@media only screen and (min-width: 992px) {
+  .postit {
+    min-height: 45%;
+    padding: 2px 20px;
+    overflow: auto;
+  }
+}
+
+.subrayado {
+  background-image: linear-gradient(to right, $primario, $primario);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  padding: 10px 10px;
+  background-size: 60% 5px;
+  transition: background-size 0.5s ease;
+  height: auto;
+}
+
+//---------------------------------------
+// Sección Faqs
+//---------------------------------------
+
+.bg-faqs {
+  padding-bottom: 100px;
+  border-bottom-left-radius: 90% 20%;
+  border-bottom-right-radius: 100% 0%;
+  border-top-left-radius: 100% 0%;
+  border-top-right-radius: 90% 20%;
+  
+}
+
+
+
+//---------------------------------------
+// Sección Footer
+//---------------------------------------
+
+.footer-logo {
+  width: 150px !important;
+}
+
+.mapa-footer {
+  width: 250px !important;
+  height: 250px !important;
+}
+
+
+
+.flotante{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 9999;
+  transform: translate(0px, -50%);
+  
+}
+
+.div-flotante{
+  max-width: 150px!important;
+  max-height: auto!important;
+  border-radius: 10px 0px 0px 10px;
+  text-align: center;
+}
+
+.whatsapp{
+  color:#25d366!important; 
+}
+
+.facebook{
+  color:#3b5998!important; 
+}

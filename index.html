@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba One Page</title>
+    <link
+      rel="shortcut-icon"
+      href="assets/img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-96x96.png"
+      sizes="96X96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-32x32.png"
+      sizes="32X32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid bg-primario">
+      <div class="container color-fondo">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h5>¿Tienes una Reparación Urgente?</h5>
+          </div>
+          <div class="row text-center">
+            <div class="col-3 col-lg-2 d-none d-md-block">
+              <i class="fas fa-mobile fa-2x"></i>
+              <h6>Llama Ahora</h6>
+            </div>
+            <div class="col-3 col-lg-2 d-none d-md-block">
+              <i class="fas fa-calendar-alt fa-2x"></i>
+              <h6>Agenda Servicio</h6>
+            </div>
+            <div class="col-3 col-lg-2 d-none d-md-block">
+              <i class="fas fa-tools fa-2x"></i>
+              <h6>Visita Técnico</h6>
+            </div>
+            <div class="col-3 col-lg-2 d-none d-md-block">
+              <i class="fas fa-edit fa-2x"></i>
+              <h6>Garantía Escrito</h6>
+            </div>
+            <div class="col-12 col-lg-2">
+              <a href="tel:+525566286715">
+                <button type="button" class="redondeo boton">¡Llama Ya!</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-light bg-fondo">
+      <div class="container">
+        <a class="navbar-brand logo-brand" href="/index.html">
+          <img
+            src="/assets/img/logo.png"
+            alt="Bold Creative Studio"
+            class="img-fluid"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+          aria-expanded="false"
+          aria-label="Mostrar Menu Navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div
+        class="offcanvas offcanvas-end rightcanvas"
+        id="offcanvasRight"
+        tabindex="-1"
+      >
+        <div>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#marcas">Marcas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#beneficios">Valor Agregado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faqs">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FLOTANTES -->
+    <div class="flotante">
+      <div class="div-flotante bg-fondo">
+        <a href="tel:+525566286715">
+          <i class="whatsapp fab fa-whatsapp fa-2x m-2"></i>
+        </a>
+        <br />
+        <a href="tel:+525566286715">
+          <i class="facebook fab fa-facebook-f fa-2x m-2"></i>
+        </a>
+        <br />
+        <a href="tel:+525566286715">
+          <i class="color-terciario fas fa-phone fa-2x m-2"></i>
+        </a>
+        <br />
+        <a href="tel:+525566286715">
+          <i class="color-terciario fas fa-envelope fa-2x m-2"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- FIN FLOTANTES -->
+
+    <section id="inicio">
+      <div
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        id="carruselhero"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carruselhero"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carruselhero"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carruselhero"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero1">
+              <div class="container">
+                <div class="row align-items-center bg-hero">
+                  <div class="col color-primario">
+                    <h2>Reparación Lavadoras</h2>
+                    <h1>Profesionales a tu servicio</h1>
+                    <h3>Cobertura Gudalajara</h3>
+                    <div class="row">
+                      <div class="col-6 col-lg-4">
+                        <a href="tel:+525566286715">
+                          <button type="button" class="redondeo boton w-100">
+                            ¡Llama Ya!
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero2">
+              <div class="container">
+                <div class="row align-items-center bg-hero">
+                  <div class="col color-primario">
+                    <h2>Mantenimiento Aire Acondicionado</h2>
+                    <h1>Garantía por escrito</h1>
+                    <h3>Cobertura Gudalajara</h3>
+                    <div class="row">
+                      <div class="col-6 col-lg-4">
+                        <a href="tel:+525566286715">
+                          <button type="button" class="redondeo boton w-100">
+                            ¡Llama Ya!
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero3">
+              <div class="container color-primario">
+                <div class="row align-items-center bg-hero">
+                  <div class="col">
+                    <h2>Revisión Refrigeradores</h2>
+                    <h1>Nos capacitamos constantemente</h1>
+                    <h3>Cobertura Gudalajara</h3>
+                    <div class="row">
+                      <div class="col-6 col-lg-4">
+                        <a href="tel:+525566286715">
+                          <button type="button" class="redondeo boton w-100">
+                            ¡Llama Ya!
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Marcas2" >
+      <div class="banner">
+        <div class="banner-contenedor">
+          <div class="banner-items">
+            <img src="/assets/img/marcas/koblenz.png" alt="Koblenz" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/lg.png" alt="LG" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/teka.png" alt="Teka" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/york.png" alt="York" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/mabe.png" alt="Mabe" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/whirlpool.png" alt="Whirlpool" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/samsung.png" alt="Samsung" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/carrier.png" alt="Carrier" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/subzero.png" alt="Subzero" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/winia.png" alt="Winia" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/maytag.png" alt="Maytag" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/frigidaire.png" alt="Frigidaire" />
+          </div>
+
+          <!-- Duplicar Banner -->
+          <div class="banner-items">
+            <img src="/assets/img/marcas/koblenz.png" alt="Koblenz" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/lg.png" alt="LG" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/teka.png" alt="Teka" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/york.png" alt="York" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/mabe.png" alt="Mabe" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/whirlpool.png" alt="Whirlpool" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/samsung.png" alt="Samsung" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/carrier.png" alt="Carrier" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/subzero.png" alt="Subzero" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/winia.png" alt="Winia" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/maytag.png" alt="Maytag" />
+          </div>
+          <div class="banner-items">
+            <img src="/assets/img/marcas/frigidaire.png" alt="Frigidaire" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <section id="nosotros" class="my-3 aos-item"  data-aos="fade-up" data-aos-duration="1500" >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Nosotros</h2>
+            <h6 class="color-primario text-center">
+              <strong>Acerca de Studio Creative</strong>
+            </h6>
+          </div>
+          <div class="col-12 col-lg-6 my-3">
+            <p>
+              Somos una empresa Mexicana, ubicada en Gudalajara Jalisco,
+              contamos con 15 años de experiencia en el área de reparación,
+              instalación y mantenimiento en equipos de línea blanca, aire
+              acondicionado , minisplit, estufas, y lavavajillas.
+            </p>
+            <br />
+            <p>
+              A lo largo de los años hemos logrado consolidar un servicio
+              enfocado en las necesidades de los clientes. Nuestro principal
+              motivación es ayudarlos. Por tal motivo nuestro personal se
+              encuentra capacitado y actualizado, solo trabajamos con
+              refacciones origianles y cada servicio tiene una garantia por
+              escrito hasta por un año.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6 my-3">
+            <img
+              src="/assets/img/nosotros/nosotros.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+
+    <!-- Red de Elementos
+      
+        <section id="marcas" class="my-5">
+      <div class="container py-5">
+        <div class="col-12">
+          <h6 class="color-primario text-center">
+            <strong>Capacitados en las mejores marcas</strong>
+          </h6>
+        </div>
+        <br />
+        <div class="marcas">
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/koblenz.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/lg.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/teka.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/york.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/mabe.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/whirlpool.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/samsung.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/carrier.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/subzero.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/winia.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/maytag.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+          <div class="marcas__item">
+            <img
+              src="/assets/img/marcas/frigidaire.png"
+              class="img-fluid mx-auto d-block"
+              alt="Nosotros"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+     -->
+
+    <section id="servicios" class="mt-3 data-aos" data-aos="fade-up" data-aos-duration="1500">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Servicios</h2>
+            <h6 class="color-primario text-center">
+              <strong
+                >Técnicos Profesionales capacitados para brindar un servicio de
+                calidad
+              </strong>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mx-0 mt-3">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 p-0 servicio">
+            <img
+              src="/assets/img/servicios/diagnostico.png"
+              alt="Diagnóstico Línea Blanca"
+              class="img-fluid"
+            />
+            <div class="postit">
+              <h5>Diagnostico</h5>
+              <div class="subrayado pt-1"></div>
+
+              <p class="pt-3">Visita técnica de nuestro personal</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-0 servicio">
+            <img
+              src="/assets/img/servicios/reparacion.png"
+              alt="Reparación Línea Blanca"
+              class="img-fluid"
+            />
+            <div class="postit">
+              <h5>Reparación</h5>
+              <div class="subrayado pt-1"></div>
+
+              <p class="pt-3">Piezas originales y precio justo</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-0 servicio">
+            <img
+              src="/assets/img/servicios/instalacion.png"
+              alt="Instalación Línea Blanca"
+              class="img-fluid"
+            />
+            <div class="postit">
+              <h5>Instalación</h5>
+              <div class="subrayado pt-1"></div>
+
+              <p class="pt-3">Preparación, conexión y configuración</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 p-0 servicio">
+            <img
+              src="/assets/img/servicios/urgencias.png"
+              alt="Urgencias Línea Blanca"
+              class="img-fluid"
+            />
+            <div class="postit">
+              <h5>Urgencias</h5>
+              <div class="subrayado pt-1"></div>
+
+              <p class="pt-3">Visita el mismo día de la cita</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios">
+      <div class="container-fluid bg-primario color-fondo">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 my-3">
+              <h2 class="text-center">Beneficios</h2>
+              <h6 class="text-center">
+                <strong
+                  >Te presentamos los beneficios que obtienes al contratar
+                  Studio Creative
+                </strong>
+              </h6>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-3 text-center my-3">
+                <i class="fas fa-award fa-2x"></i>
+                <h6>Técnicos Certificados</h6>
+              </div>
+              <div class="col-12 col-md-3 text-center my-3">
+                <i class="fas fa-tools fa-2x"></i>
+                <h6>Refacciones Originales</h6>
+              </div>
+              <div class="col-12 col-md-3 text-center my-3">
+                <i class="fas fa-history fa-2x"></i>
+                <h6>Atención 24/7</h6>
+              </div>
+              <div class="col-12 col-md-3 text-center my-3">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <h6>Precio Justo</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+
+    <section id="cta2" class="data-aos" data-aos="fade-up" data-aos-duration="1500">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 order-md-1 text-center">
+            <h5>Te visitamos hoy mismo <i class="fas fa-truck"></i></h5>
+            <h2><strong>¡Deja de sufrir!</strong></h2>
+            <h6>Nuestra visita no tiene costo</h6>
+            <div class="col-6 col-lg-4 mx-auto">
+              <a href="tel:+525566286715">
+                <button type="button" class="redondeo boton w-100">
+                  Agendar visita <i class="far fa-calendar-alt"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+
+    <section id="faqs" class="my-3 data-aos" data-aos="fade-up" data-aos-duration="1500">
+      <div class="container-fluid bg-primario color-fondo bg-faqs">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 my-3">
+              <h2 class="text-center">Preguntas Frecuentes</h2>
+              <h6 class="color-terciario text-center">
+                <strong
+                  >Te compartimos las preguntas mas comúnes que nuestros
+                  clientes realizan
+                </strong>
+              </h6>
+            </div>
+
+            <!-- Inician Preguntas Frecuentes -->
+            <div class="row color-fondo my-3 mx-auto">
+              <div class="col-md-10 mx-auto">
+                <a
+                  href="#pregunta1"
+                  data-bs-toggle="collapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="pregunta1"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-between px-3 py-2 redondeo bg-secundario"
+                  >
+                    <h5>¿Donde se encuentra Studio Creative?</h5>
+                    <i class="fas fa-lg fa-plus color-terciario"></i>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-md-10 mx-auto collapse color-fondo px-3"
+                id="pregunta1"
+              >
+                <h6>
+                  Estamos ubicados en Zapopan Jalisco, en la colonia Moraleja
+                </h6>
+              </div>
+            </div>
+
+            <div class="row color-fondo my-3 mx-auto">
+              <div class="col-md-10 mx-auto">
+                <a
+                  href="#pregunta2"
+                  data-bs-toggle="collapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="pregunta2"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-between px-3 py-2 redondeo bg-secundario"
+                  >
+                    <h5>
+                      ¿Cuentan con un taller físcio para llevar mis aparatos a
+                      reparar?
+                    </h5>
+                    <i class="fas fa-lg fa-plus color-terciario"></i>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-md-10 mx-auto collapse color-fondo px-3"
+                id="pregunta2"
+              >
+                <h6>
+                  Por el momento no, preferimos visitar a nuestros clientes, ya
+                  que el manejo de los mismos puede ser en exceso delicado
+                </h6>
+              </div>
+            </div>
+
+            <div class="row color-fondo my-3 mx-auto">
+              <div class="col-md-10 mx-auto">
+                <a
+                  href="#pregunta3"
+                  data-bs-toggle="collapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="pregunta3"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-between px-3 py-2 redondeo bg-secundario"
+                  >
+                    <h5>¿Tiene algun costo la visita de los técnicos?</h5>
+                    <i class="fas fa-lg fa-plus color-terciario"></i>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-md-10 mx-auto collapse color-fondo px-3"
+                id="pregunta3"
+              >
+                <h6>La visita de los técnicos no tiene costos, es GRATIS</h6>
+              </div>
+            </div>
+
+            <div class="row color-fondo my-3 mx-auto">
+              <div class="col-md-10 mx-auto">
+                <a
+                  href="#pregunta4"
+                  data-bs-toggle="collapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="pregunta4"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-between px-3 py-2 redondeo bg-secundario"
+                  >
+                    <h5>
+                      ¿Realizan presupuestos por teléfono, whatsapp, o correo?
+                    </h5>
+                    <i class="fas fa-lg fa-plus color-terciario"></i>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-md-10 mx-auto collapse color-fondo px-3"
+                id="pregunta4"
+              >
+                <h6>
+                  Evitamos dar presupuestos a través de esos medios, con el
+                  objetivo de evitar una respuesta errónea preferimos asistir
+                  con el cliente a domicilio para ser exactos en su presupuesto
+                </h6>
+              </div>
+            </div>
+
+            <div class="row color-fondo my-3 mx-auto">
+              <div class="col-md-10 mx-auto">
+                <a
+                  href="#pregunta5"
+                  data-bs-toggle="collapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="pregunta5"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-between px-3 py-2 redondeo bg-secundario"
+                  >
+                    <h5>¿Cuál es la garantía que manejan?</h5>
+                    <i class="fas fa-lg fa-plus color-terciario"></i>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-md-10 mx-auto collapse color-fondo px-3"
+                id="pregunta5"
+              >
+                <h6>
+                  Nuestra garantía es por escrito y puede ser hasta por un año,
+                  dependerá del tipo de reparación que se realice
+                </h6>
+              </div>
+            </div>
+
+            <div class="row color-fondo my-3 mx-auto">
+              <div class="col-md-10 mx-auto">
+                <a
+                  href="#pregunta6"
+                  data-bs-toggle="collapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="pregunta6"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-between px-3 py-2 redondeo bg-secundario"
+                  >
+                    <h5>¿Realizan servicios a empresas y/o corporativos?</h5>
+                    <i class="fas fa-lg fa-plus color-terciario"></i>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-md-10 mx-auto collapse color-fondo px-3"
+                id="pregunta6"
+              >
+                <h6>
+                  Contamos con pólizas de servicios pensadas en atender las
+                  necesidades de clientes grandes, corporativos o empresas
+                </h6>
+              </div>
+            </div>
+
+            <div class="row color-fondo my-3 mx-auto">
+              <div class="col-md-10 mx-auto">
+                <a
+                  href="#pregunta7"
+                  data-bs-toggle="collapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="pregunta7"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-between px-3 py-2 redondeo bg-secundario"
+                  >
+                    <h5>¿Cuántos años de experiencia los respaldan?</h5>
+                    <i class="fas fa-lg fa-plus color-terciario"></i>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-md-10 mx-auto collapse color-fondo px-3"
+                id="pregunta7"
+              >
+                <h6>
+                  15 años de experiencia en el sector de reparación de aparatos
+                  electrónicos de línea blanca y aire acondicionado
+                </h6>
+              </div>
+            </div>
+
+            <div class="row color-fondo my-3 mx-auto">
+              <div class="col-md-10 mx-auto">
+                <a
+                  href="#pregunta8"
+                  data-bs-toggle="collapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="pregunta8"
+                >
+                  <div
+                    class="d-flex align-items-center justify-content-between px-3 py-2 redondeo bg-secundario"
+                  >
+                    <h5>¿Realizan algun tipo de servicio preventivo?</h5>
+                    <i class="fas fa-lg fa-plus color-terciario"></i>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="col-md-10 mx-auto collapse color-fondo px-3"
+                id="pregunta8"
+              >
+                <h6>
+                  Como profesionales, siempre le sugerimos a nuestros clientes
+                  que protegan a sus equipos con servicios de mantenimiento
+                  preventivo, para que no se vean afectados por fallas o averías
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+
+    <section id="testimonios" class="my-3 data-aos" data-aos="fade-up" data-aos-duration="1500">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Testimonios</h2>
+            <h6 class="color-primario text-center">
+              <strong
+                >Tenemos la fortuna de haber ayudado a nuestros clientes en más
+                de una ocasión, gracias a nuestro trabajo
+              </strong>
+            </h6>
+          </div>
+        </div>
+        <div class="row my-3 justify-content-around">
+          <div class="col-12 col-md-5 col-lg-4 my-3">
+            <h5 class="card-title text-center">
+              <strong>
+                <i class="fas fa-quote-left color-terciario"></i>
+                Rescataron mi lavadora y bolsillo
+                <i class="fas fa-quote-right color-terciario"></i>
+              </strong>
+            </h5>
+            <h6 class="card-text">
+              Tuve problemas con la lavadora que había sido un regalo de bodas,
+              era inicio de clases, y estabamos llenos de gastos, no contaba con
+              presupuesto para renovar el equipo, fue entonces que llame a
+              Studio Creative, acudieron a mi domicilio el mismo día y me
+              resolvieron todos los problemas. y con una reparación de ellos
+              recupere mi lavadora, el ciclo escolar ya va a la mitad y no he
+              tenido problema alguno con el equipo.
+            </h6>
+            <p class="card-text color-secundario text-center">
+              Maria Hernández
+            </p>
+          </div>
+          <div class="col-12 col-md-5 col-lg-4 my-3">
+            <h5 class="card-title text-center">
+              <strong>
+                <i class="fas fa-quote-left color-terciario"></i>
+                Visita express perfecta
+                <i class="fas fa-quote-right color-terciario"></i>
+              </strong>
+            </h5>
+            <h6 class="card-text">
+              Acababa de realizar las compras de mi despensa quincenal por la
+              noche, mi esposa y yo trabajamos y solo por las tardes podemos
+              realizarlas, al llegar a casa el refrigerador no funcionaba, no
+              podía dejar las cosas a la intermperie, y menos pedir un día de
+              trabajo para solucionarlo, llame a Studio Creative y para mi
+              sorpresa más tarde me visitaron e hicieron la reparación si cargo
+              extra, el refrigerador hoy sigue sin probelmas.
+            </h6>
+            <p class="card-text color-secundario text-center">
+              Pedro Antonio Flores
+            </p>
+          </div>
+        </div>
+        <div class="row my-3 justify-content-center">
+          <div class="col-12 col-md-5 col-lg-4 mx-auto my-3">
+            <h5 class="card-title text-center">
+              <strong>
+                <i class="fas fa-quote-left color-terciario"></i>
+                Profesionales de Aire Acondicionado
+                <i class="fas fa-quote-right color-terciario"></i>
+              </strong>
+            </h5>
+            <h6 class="card-text">
+              En las instalaciones de la empresa en primaver siempre el calor es
+              un problema, hemos detectado que el rendimiento deñ personal
+              dsminuye cuando las temperaturas son elevadas, por un año se quedo
+              pendiente la reparación de aire acondicionado, sin embargo el
+              último año acudimos con Stduio Creative, ellos no inflaron los
+              precios y nos ayudaron a reparar el sistema de aire acondicionado
+              por completo, actualmente contamos con una póliza de servicio para
+              garantizar el mantenimiento de nuestros equipos.
+            </h6>
+            <p class="card-text color-secundario text-center">
+              Minerva Astudillo
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+
+    <footer id="footer" class="mt-3 data-aos" data-aos="fade-up" data-aos-duration="500">
+      <div class="container-fluid bg-primario color-fondo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <a class="navbar-brand logo-brand" href="/index.html">
+                <img
+                  src="/assets/img/logo.png"
+                  alt="Bold Creative Studio"
+                  class="footer-logo"
+                />
+              </a>
+              <h6>
+                Profesionales en reparación de linea blanca y aire acondicionado
+              </h6>
+            </div>
+            <div class="col-md-4 py-3">
+              <iframe
+                width="100%"
+                height="250px"
+                class="redondeo"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119445.50389871332!2d-103.47402102816851!3d20.682919304398485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae61a9704c13%3A0xafd8a5d47ed002ac!2sZapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1642532928192!5m2!1ses-419!2smx"
+              ></iframe>
+            </div>
+            <div class="col-md-4 my-3">
+              <h5>Contacto</h5>
+
+              <h6><i class="fas fa-phone fa-1x"></i> +52 (33) 3333-3333</h6>
+              <h6><i class="fab fa-whatsapp fa-1x"></i> +52 (33) 3333-3333</h6>
+              <h6><i class="fab fa-facebook-square"></i> Studio Creative</h6>
+
+              <h6>
+                <i class="fas fa-envelope fa-1x"></i> hola@studiocreative.mx
+              </h6>
+              <h6>
+                <i class="fas fa-map-marker-alt fa-1x"></i> Zapopan, Jalisco
+              </h6>
+              <h6>
+                <i class="fas fa-clock fa-1x"></i> Lunes a Viernes de 9:00 a
+                18:00
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/assets/js/all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
