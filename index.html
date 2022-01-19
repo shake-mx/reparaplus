@@ -4,26 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prueba One Page</title>
-    <link
-      rel="shortcut-icon"
-      href="assets/img/favicon/favicon.ico"
-      type="image/x-icon"
+    <title>Reparaplus Línea Blanca y Aire Acondicionado</title>
+    <meta
+      name="description"
+      content="Especialistas en reparación de línea blanca y aire acondicionado en Guadalajara"
     />
+    <link rel="shortcut-icon" href="/assets/img/favicon.ico" />
     <link
       rel="icon"
       type="image/png"
-      href="assets/img/favicon/favicon-96x96.png"
+      href="/assets/img/favicon-96x96.png"
       sizes="96X96"
     />
     <link
       rel="icon"
       type="image/png"
-      href="assets/img/favicon/favicon-32x32.png"
+      href="/assets/img/favicon-32x32.png"
       sizes="32X32"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- FONT AWESOME CONTENT VALUES -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <!-- FONT AWESOME CONTENT VALUES -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -48,7 +55,7 @@
           </div>
           <div class="row text-center">
             <div class="col-3 col-lg-2 d-none d-md-block">
-              <i class="fas fa-mobile fa-2x"></i>
+              <i class="fas fa-phone fa-2x"></i>
               <h6>Llama Ahora</h6>
             </div>
             <div class="col-3 col-lg-2 d-none d-md-block">
@@ -63,9 +70,11 @@
               <i class="fas fa-edit fa-2x"></i>
               <h6>Garantía Escrito</h6>
             </div>
-            <div class="col-12 col-lg-2">
+            <div class="col-12 col-lg-3 my-3">
               <a href="tel:+525566286715">
-                <button type="button" class="redondeo boton">¡Llama Ya!</button>
+                <button type="button" class="redondeo boton">
+                  ¡Agendar Servicio!
+                </button>
               </a>
             </div>
           </div>
@@ -115,17 +124,41 @@
             <li class="nav-item">
               <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Servicios
+              </a>
+              <ul
+                class="dropdown-menu color-texto"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/lavadoras.html">Lavadoras y Secadoras</a>
+                </li>
+                <li><a class="dropdown-item" href="/refrigeradores.html">Refrigeradores</a></li>
+                <li>
+                  <a class="dropdown-item" href="/aireacondicionado.html"
+                    >Aire Acondicionado y Minisplit</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/lavavajillas.html">Estufas y Lavavajillas</a>
+                </li>
+              </ul>
+            </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#marcas">Marcas</a>
+              <a class="nav-link" href="#beneficios">Beneficios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#servicios">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#beneficios">Valor Agregado</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faqs">Preguntas Frecuentes</a>
+              <a class="nav-link" href="#faqs">Preguntas Frecuentes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#testimonios">Testimonios</a>
@@ -137,7 +170,7 @@
     <!-- FLOTANTES -->
     <div class="flotante">
       <div class="div-flotante bg-fondo">
-        <a href="tel:+525566286715">
+        <a href="https://wa.me/5213310691674?text=Hola%20Reparaplus%20" target="__blank">
           <i class="whatsapp fab fa-whatsapp fa-2x m-2"></i>
         </a>
         <br />
@@ -146,16 +179,22 @@
         </a>
         <br />
         <a href="tel:+525566286715">
-          <i class="color-terciario fas fa-phone fa-2x m-2"></i>
+          <i class="color-secundario fas fa-phone fa-2x m-2"></i>
         </a>
         <br />
         <a href="tel:+525566286715">
-          <i class="color-terciario fas fa-envelope fa-2x m-2"></i>
+          <i class="color-secundario fas fa-envelope fa-2x m-2"></i>
         </a>
       </div>
     </div>
 
     <!-- FIN FLOTANTES -->
+
+    <!-- INICIO TOP SCROLL -->
+
+    <a id="button"></a>
+
+    <!-- FIN TOP SCROLL  -->
 
     <section id="inicio">
       <div
@@ -190,7 +229,9 @@
             <div class="hero1">
               <div class="container">
                 <div class="row align-items-center bg-hero">
-                  <div class="col color-primario">
+                  <div
+                    class="col-md-8 col-lg-6 color-primario bg-head redondeo py-2 px-3"
+                  >
                     <h2>Reparación Lavadoras</h2>
                     <h1>Profesionales a tu servicio</h1>
                     <h3>Cobertura Gudalajara</h3>
@@ -212,7 +253,9 @@
             <div class="hero2">
               <div class="container">
                 <div class="row align-items-center bg-hero">
-                  <div class="col color-primario">
+                  <div
+                    class="col-md-8 col-lg-6 color-primario bg-head redondeo py-2 px-3"
+                  >
                     <h2>Mantenimiento Aire Acondicionado</h2>
                     <h1>Garantía por escrito</h1>
                     <h3>Cobertura Gudalajara</h3>
@@ -234,7 +277,9 @@
             <div class="hero3">
               <div class="container color-primario">
                 <div class="row align-items-center bg-hero">
-                  <div class="col">
+                  <div
+                    class="col-md-8 col-lg-6 color-primario bg-head redondeo py-2 px-3"
+                  >
                     <h2>Revisión Refrigeradores</h2>
                     <h1>Nos capacitamos constantemente</h1>
                     <h3>Cobertura Gudalajara</h3>
@@ -255,7 +300,7 @@
         </div>
       </div>
     </section>
-    <section id="Marcas2" >
+    <section id="Marcas2">
       <div class="banner">
         <div class="banner-contenedor">
           <div class="banner-items">
@@ -335,40 +380,46 @@
         </div>
       </div>
     </section>
-    <br />
-    <br />
-    <section id="nosotros" class="my-3 aos-item"  data-aos="fade-up" data-aos-duration="1500" >
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-center">Nosotros</h2>
-            <h6 class="color-primario text-center">
-              <strong>Acerca de Studio Creative</strong>
-            </h6>
-          </div>
-          <div class="col-12 col-lg-6 my-3">
-            <p>
-              Somos una empresa Mexicana, ubicada en Gudalajara Jalisco,
-              contamos con 15 años de experiencia en el área de reparación,
-              instalación y mantenimiento en equipos de línea blanca, aire
-              acondicionado , minisplit, estufas, y lavavajillas.
-            </p>
-            <br />
-            <p>
-              A lo largo de los años hemos logrado consolidar un servicio
-              enfocado en las necesidades de los clientes. Nuestro principal
-              motivación es ayudarlos. Por tal motivo nuestro personal se
-              encuentra capacitado y actualizado, solo trabajamos con
-              refacciones origianles y cada servicio tiene una garantia por
-              escrito hasta por un año.
-            </p>
-          </div>
-          <div class="col-12 col-lg-6 my-3">
-            <img
-              src="/assets/img/nosotros/nosotros.png"
-              class="img-fluid mx-auto d-block"
-              alt="Nosotros"
-            />
+
+    <section
+      id="nosotros"
+      class="mb-3 aos-item"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div class="container-fluid bg-primario">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center color-fondo pt-3">Nosotros</h2>
+              <h6 class="color-secundario text-center">
+                <strong>Acerca de Studio Creative</strong>
+              </h6>
+            </div>
+            <div class="col-12 col-lg-6 my-3 color-fondo">
+              <p>
+                Somos una empresa Mexicana, ubicada en Gudalajara Jalisco,
+                contamos con 15 años de experiencia en el área de reparación,
+                instalación y mantenimiento en equipos de línea blanca, aire
+                acondicionado , minisplit, estufas, y lavavajillas.
+              </p>
+              <br />
+              <p>
+                A lo largo de los años hemos logrado consolidar un servicio
+                enfocado en las necesidades de los clientes. Nuestro principal
+                motivación es ayudarlos. Por tal motivo nuestro personal se
+                encuentra capacitado y actualizado, solo trabajamos con
+                refacciones origianles y cada servicio tiene una garantia por
+                escrito hasta por un año.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6 my-3 mx-auto">
+              <img
+                src="/assets/img/nosotros/nosotros.png"
+                class="img-fluid d-block"
+                alt="Nosotros"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -476,12 +527,17 @@
     </section>
      -->
 
-    <section id="servicios" class="mt-3 data-aos" data-aos="fade-up" data-aos-duration="1500">
+    <section
+      id="servicios"
+      class="mt-3 data-aos"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h2 class="text-center">Servicios</h2>
-            <h6 class="color-primario text-center">
+            <h6 class="color-secundario text-center">
               <strong
                 >Técnicos Profesionales capacitados para brindar un servicio de
                 calidad
@@ -493,56 +549,80 @@
       <div class="container-fluid mx-0 mt-3">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 p-0 servicio">
-            <img
-              src="/assets/img/servicios/diagnostico.png"
-              alt="Diagnóstico Línea Blanca"
-              class="img-fluid"
-            />
-            <div class="postit">
-              <h5>Diagnostico</h5>
-              <div class="subrayado pt-1"></div>
-
-              <p class="pt-3">Visita técnica de nuestro personal</p>
-            </div>
+            <a href="">
+              <div class="gradiante">
+                <img
+                  src="/assets/img/servicios/lavadora.png"
+                  alt="Reparación de lavadoras, secadoras y centros de lavado"
+                  class="img-fluid imagen-servicios"
+                />
+              </div>
+              <div class="postit">
+                <h5>Lavadoras y Secadoras</h5>
+                <div class="subrayado pt-1"></div>
+                <p class="pt-3">
+                  Instalación, centrifugado, manegueras, tambor, bomba de agua,
+                  display, tapa, olores, etc
+                </p>
+              </div>
+            </a>
           </div>
           <div class="col-12 col-md-6 col-lg-3 p-0 servicio">
-            <img
-              src="/assets/img/servicios/reparacion.png"
-              alt="Reparación Línea Blanca"
-              class="img-fluid"
-            />
-            <div class="postit">
-              <h5>Reparación</h5>
-              <div class="subrayado pt-1"></div>
-
-              <p class="pt-3">Piezas originales y precio justo</p>
-            </div>
+            <a href="">
+              <div class="gradiante">
+                <img
+                  src="/assets/img/servicios/refrigerador.png"
+                  alt="Reparación de refrigeradores"
+                  class="img-fluid imagen-servicios"
+                />
+              </div>
+              <div class="postit">
+                <h5>Refrigeradores</h5>
+                <div class="subrayado pt-1"></div>
+                <p class="pt-3">
+                  Instalación, carga de gas, compresor, congelador,
+                  termostato,tubería, timer, ventilador, etc
+                </p>
+              </div>
+            </a>
           </div>
           <div class="col-12 col-md-6 col-lg-3 p-0 servicio">
-            <img
-              src="/assets/img/servicios/instalacion.png"
-              alt="Instalación Línea Blanca"
-              class="img-fluid"
-            />
-            <div class="postit">
-              <h5>Instalación</h5>
-              <div class="subrayado pt-1"></div>
-
-              <p class="pt-3">Preparación, conexión y configuración</p>
-            </div>
+            <a href="">
+              <div class="gradiante">
+                <img
+                  src="/assets/img/servicios/aire.png"
+                  alt="Reparación aire acondicionado y minisplit"
+                  class="img-fluid imagen-servicios"
+                />
+              </div>
+              <div class="postit">
+                <h5>Aire Acondicionado y Minisplit</h5>
+                <div class="subrayado pt-1"></div>
+                <p class="pt-3">
+                  Instalación, mantenimiento, compresor, goteo, termostato,
+                  circulación, bobínas, limpieza, etc
+                </p>
+              </div>
+            </a>
           </div>
           <div class="col-12 col-md-6 col-lg-3 p-0 servicio">
-            <img
-              src="/assets/img/servicios/urgencias.png"
-              alt="Urgencias Línea Blanca"
-              class="img-fluid"
-            />
-            <div class="postit">
-              <h5>Urgencias</h5>
-              <div class="subrayado pt-1"></div>
-
-              <p class="pt-3">Visita el mismo día de la cita</p>
-            </div>
+            <a href="">
+              <div class="gradiante">
+                <img
+                  src="/assets/img/servicios/lavavajillas.png"
+                  alt="Reparación de estufas y lavavajillas"
+                  class="img-fluid imagen-servicios"
+                />
+              </div>
+              <div class="postit">
+                <h5>Estufas y Lavavajillas</h5>
+                <div class="subrayado pt-1"></div>
+                <p class="pt-3">
+                  Instalación, calibración, quemadores, fugas, desagüe, filtro,
+                  mangueras, pastillas, aspas, etc
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -552,9 +632,9 @@
       <div class="container-fluid bg-primario color-fondo">
         <div class="container">
           <div class="row">
-            <div class="col-12 my-3">
+            <div class="col-12 my-3 pt-3">
               <h2 class="text-center">Beneficios</h2>
-              <h6 class="text-center">
+              <h6 class="text-center color-secundario">
                 <strong
                   >Te presentamos los beneficios que obtienes al contratar
                   Studio Creative
@@ -563,19 +643,19 @@
             </div>
             <div class="row">
               <div class="col-12 col-md-3 text-center my-3">
-                <i class="fas fa-award fa-2x"></i>
+                <i class="fas fa-award fa-3x my-3"></i>
                 <h6>Técnicos Certificados</h6>
               </div>
               <div class="col-12 col-md-3 text-center my-3">
-                <i class="fas fa-tools fa-2x"></i>
+                <i class="fas fa-tools fa-3x my-3"></i>
                 <h6>Refacciones Originales</h6>
               </div>
               <div class="col-12 col-md-3 text-center my-3">
-                <i class="fas fa-history fa-2x"></i>
+                <i class="fas fa-history fa-3x my-3"></i>
                 <h6>Atención 24/7</h6>
               </div>
               <div class="col-12 col-md-3 text-center my-3">
-                <i class="fas fa-dollar-sign fa-2x"></i>
+                <i class="fas fa-dollar-sign fa-3x my-3"></i>
                 <h6>Precio Justo</h6>
               </div>
             </div>
@@ -586,7 +666,12 @@
     <br />
     <br />
 
-    <section id="cta2" class="data-aos" data-aos="fade-up" data-aos-duration="1500">
+    <section
+      id="cta2"
+      class="data-aos"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div class="container">
         <div class="row">
           <div class="col-12 order-md-1 text-center">
@@ -607,13 +692,18 @@
     <br />
     <br />
 
-    <section id="faqs" class="my-3 data-aos" data-aos="fade-up" data-aos-duration="1500">
+    <section
+      id="faqs"
+      class="my-3 data-aos"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div class="container-fluid bg-primario color-fondo bg-faqs">
         <div class="container">
           <div class="row">
-            <div class="col-12 my-3">
+            <div class="col-12 my-3 pt-3">
               <h2 class="text-center">Preguntas Frecuentes</h2>
-              <h6 class="color-terciario text-center">
+              <h6 class="color-secundario text-center">
                 <strong
                   >Te compartimos las preguntas mas comúnes que nuestros
                   clientes realizan
@@ -854,12 +944,17 @@
     </section>
     <br /><br />
 
-    <section id="testimonios" class="my-3 data-aos" data-aos="fade-up" data-aos-duration="1500">
+    <section
+      id="testimonios"
+      class="my-3 data-aos"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h2 class="text-center">Testimonios</h2>
-            <h6 class="color-primario text-center">
+            <h6 class="color-secundario text-center">
               <strong
                 >Tenemos la fortuna de haber ayudado a nuestros clientes en más
                 de una ocasión, gracias a nuestro trabajo
@@ -871,12 +966,12 @@
           <div class="col-12 col-md-5 col-lg-4 my-3">
             <h5 class="card-title text-center">
               <strong>
-                <i class="fas fa-quote-left color-terciario"></i>
+                <i class="fas fa-quote-left color-secundario"></i>
                 Rescataron mi lavadora y bolsillo
-                <i class="fas fa-quote-right color-terciario"></i>
+                <i class="fas fa-quote-right color-secundario"></i>
               </strong>
             </h5>
-            <h6 class="card-text">
+            <h6 class="card-text color-texto">
               Tuve problemas con la lavadora que había sido un regalo de bodas,
               era inicio de clases, y estabamos llenos de gastos, no contaba con
               presupuesto para renovar el equipo, fue entonces que llame a
@@ -892,9 +987,9 @@
           <div class="col-12 col-md-5 col-lg-4 my-3">
             <h5 class="card-title text-center">
               <strong>
-                <i class="fas fa-quote-left color-terciario"></i>
+                <i class="fas fa-quote-left color-secundario"></i>
                 Visita express perfecta
-                <i class="fas fa-quote-right color-terciario"></i>
+                <i class="fas fa-quote-right color-secundario"></i>
               </strong>
             </h5>
             <h6 class="card-text">
@@ -915,9 +1010,9 @@
           <div class="col-12 col-md-5 col-lg-4 mx-auto my-3">
             <h5 class="card-title text-center">
               <strong>
-                <i class="fas fa-quote-left color-terciario"></i>
+                <i class="fas fa-quote-left color-secundario"></i>
                 Profesionales de Aire Acondicionado
-                <i class="fas fa-quote-right color-terciario"></i>
+                <i class="fas fa-quote-right color-secundario"></i>
               </strong>
             </h5>
             <h6 class="card-text">
@@ -940,19 +1035,24 @@
     <br />
     <br />
 
-    <footer id="footer" class="mt-3 data-aos" data-aos="fade-up" data-aos-duration="500">
+    <footer
+      id="footer"
+      class="mt-3 data-aos"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <div class="container-fluid bg-primario color-fondo">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
               <a class="navbar-brand logo-brand" href="/index.html">
                 <img
-                  src="/assets/img/logo.png"
+                  src="/assets/img/logo_letra.png"
                   alt="Bold Creative Studio"
                   class="footer-logo"
                 />
               </a>
-              <h6>
+              <h6 class="color-secundario">
                 Profesionales en reparación de linea blanca y aire acondicionado
               </h6>
             </div>
@@ -965,10 +1065,10 @@
               ></iframe>
             </div>
             <div class="col-md-4 my-3">
-              <h5>Contacto</h5>
+              <h5 class="color-secundario"><strong>Contacto</strong></h5>
 
               <h6><i class="fas fa-phone fa-1x"></i> +52 (33) 3333-3333</h6>
-              <h6><i class="fab fa-whatsapp fa-1x"></i> +52 (33) 3333-3333</h6>
+              <a href="https://wa.me/5213310691674?text=Hola%20Reparaplus%20" target="__blank"><h6><i class="fab fa-whatsapp fa-1x"></i> +52 (33) 1069-1674</h6></a>
               <h6><i class="fab fa-facebook-square"></i> Studio Creative</h6>
 
               <h6>
@@ -991,11 +1091,14 @@
     <script>
       AOS.init();
     </script>
-    <script src="/assets/js/all.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/assets/js/all.min.js"></script>
+    <script src="/assets/js/custom.js"></script>
   </body>
 </html>

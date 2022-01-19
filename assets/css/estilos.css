@@ -3,26 +3,34 @@ body {
   color: #424761;
   font-family: "Poppins", sans-serif; }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 5px 5px; }
+
+li {
+  margin-top: .5rem; }
+
 .bg-primario {
-  background-color: #ff556d; }
+  background-color: #006BBB; }
 
 .bg-secundario {
-  background-color: #1597b0; }
+  background-color: #ffc872; }
 
 .bg-terciario {
-  background-color: #2f3f63; }
+  background-color: #30a0e0; }
 
 .bg-fondo {
   background-color: #fefffe; }
 
 .color-primario {
-  color: #ff556d; }
+  color: #006BBB; }
 
 .color-secundario {
-  color: #1597b0; }
+  color: #ffc872; }
 
 .color-terciario {
-  color: #2f3f63; }
+  color: #30a0e0; }
 
 .color-texto {
   color: #424761; }
@@ -37,7 +45,7 @@ body {
           box-shadow: transparent !important; }
 
 .boton {
-  background-color: #1597b0 !important;
+  background-color: #ffc872 !important;
   color: #fefffe;
   padding: 5px 15px;
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -45,7 +53,7 @@ body {
 
 .boton:hover {
   background-color: #fefffe !important;
-  color: #1597b0;
+  color: #ffc872;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s; }
 
@@ -82,6 +90,15 @@ a:hover {
   border-color: transparent !important;
   border: none !important; }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #424761 !important; }
+
+.dropdown-menu {
+  border: 0px solid transparent !important; }
+
+.dropdown-item {
+  color: #006BBB !important; }
+
 .btn-close {
   background-image: url("/assets/img/close.png") !important;
   background-repeat: no-repeat !important;
@@ -115,6 +132,9 @@ a:hover {
 
 .bg-hero {
   height: 650px; }
+
+.bg-head {
+  background-color: rgba(254, 255, 254, 0.6); }
 
 .marcas {
   display: -webkit-box;
@@ -189,8 +209,8 @@ a:hover {
     padding: 2px 20px;
     overflow: auto; } }
 .subrayado {
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff556d), to(#ff556d));
-  background-image: linear-gradient(to right, #ff556d, #ff556d);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffc872), to(#ffc872));
+  background-image: linear-gradient(to right, #ffc872, #ffc872);
   background-position: bottom left;
   background-repeat: no-repeat;
   padding: 10px 10px;
@@ -199,6 +219,35 @@ a:hover {
   transition: background-size 0.5s ease;
   height: auto; }
 
+.imagen-servicios {
+  -webkit-transition: visibility .5s linear,opacity .5s linear;
+  transition: visibility .5s linear,opacity .5s linear; }
+
+.gradiante:hover {
+  -webkit-animation: gradient .5s ease 0s 1;
+  animation: gradient .5s ease 0s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+  .gradiante:hover img {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility .5s linear,opacity .5s linear;
+    transition: visibility .5s linear,opacity .5s linear; }
+
+@keyframes gradient {
+  to {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffc872), to(#006bbb));
+    background: linear-gradient(0deg, #ffc872 0%, #006bbb 100%); }
+  from {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffc872), to(#006bbb));
+    background: linear-gradient(0deg, #ffc872 0%, #006bbb 100%); } }
+@-webkit-keyframes gradient {
+  to {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffc872), to(#006bbb));
+    background: linear-gradient(0deg, #ffc872 0%, #006bbb 100%); }
+  from {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffc872), to(#006bbb));
+    background: linear-gradient(0deg, #ffc872 0%, #006bbb 100%); } }
 .bg-faqs {
   padding-bottom: 100px;
   border-bottom-left-radius: 90% 20%;
@@ -232,5 +281,149 @@ a:hover {
 
 .facebook {
   color: #3b5998 !important; }
+
+#button {
+  display: inline-block;
+  background-color: #ffc872;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; }
+
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fefffe; }
+
+#button:hover {
+  cursor: pointer;
+  background-color: #30a0e0; }
+
+#button:active {
+  background-color: #30a0e0; }
+
+#button.show {
+  opacity: 1;
+  visibility: visible; }
+
+.hero1lavadoras {
+  height: 40vh;
+  background-image: url("/assets/img/lavadora/lavadora.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial; }
+
+.bg-hero-lavadoras {
+  height: 450px; }
+
+ul li.marca::before {
+  content: "";
+  background-image: url("/assets/img/ok.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem; }
+
+.hero1refrigerador {
+  height: 40vh;
+  background-image: url("/assets/img/refrigerador/refrigerador.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial; }
+
+.bg-hero-refrigerador {
+  height: 450px; }
+
+ul li.marca::before {
+  content: "";
+  background-image: url("/assets/img/ok.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem; }
+
+.hero1aire {
+  height: 40vh;
+  background-image: url("/assets/img/acondicionado/aire.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial; }
+
+.hero2aire {
+  height: 40vh;
+  background-image: url("/assets/img/acondicionado/mini.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: initial; }
+
+.bg-hero-aire {
+  height: 450px; }
+
+ul li.marca::before {
+  content: "";
+  background-image: url("/assets/img/ok.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem; }
+
+.hero1lavavajilla {
+  height: 40vh;
+  background-image: url("/assets/img/lavavajillas/lavavajillas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial; }
+
+.hero2lavavajilla {
+  height: 40vh;
+  background-image: url("/assets/img/lavavajillas/estufa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial; }
+
+.bg-hero-lavavajilla {
+  height: 450px; }
+
+ul li.marca::before {
+  content: "";
+  background-image: url("/assets/img/ok.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem; }
 
 /*# sourceMappingURL=estilos.css.map */

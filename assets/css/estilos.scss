@@ -2,9 +2,9 @@
 // PATRONES DE COLORES
 //---------------------------------------
 
-$primario: #ff556d;
-$secundario: #1597b0;
-$terciario: #2f3f63;
+$primario: #006BBB;
+$secundario: #ffc872;
+$terciario: #30a0e0;
 $fondo: #fefffe;
 $texto: #424761;
 
@@ -16,6 +16,16 @@ body {
   background-color: $fondo;
   color: $texto;
   font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0; 
+  margin: 5px 5px; 
+}
+
+li{
+  margin-top: .5rem;
 }
 
 .bg-primario {
@@ -112,6 +122,17 @@ a:hover {
   border-color: transparent !important;
   border: none !important;
 }
+.navbar-light .navbar-nav .nav-link {
+  color: $texto!important;
+}
+
+
+.dropdown-menu {
+  border: 0px solid transparent!important;
+}
+.dropdown-item{
+  color: $primario!important;
+}
 
 .btn-close {
   background-image: url("/assets/img/close.png") !important;
@@ -155,7 +176,9 @@ a:hover {
 .bg-hero {
   height: 650px;
 }
-
+.bg-head{
+background-color: rgba($color: $fondo, $alpha: 0.6);
+}
 //---------------------------------------
 // Sección 3 Marcas -- Red
 //---------------------------------------
@@ -246,13 +269,49 @@ a:hover {
 }
 
 .subrayado {
-  background-image: linear-gradient(to right, $primario, $primario);
+  background-image: linear-gradient(to right, $secundario, $secundario);
   background-position: bottom left;
   background-repeat: no-repeat;
   padding: 10px 10px;
   background-size: 60% 5px;
   transition: background-size 0.5s ease;
   height: auto;
+}
+
+.imagen-servicios{
+  transition:visibility .5s linear,opacity .5s linear;
+}
+.gradiante:hover{
+  img{
+    visibility: hidden;
+    opacity:0;
+    transition:visibility .5s linear,opacity .5s linear;
+  }
+  -webkit-animation: gradient .5s ease 0s 1;
+  animation: gradient .5s ease 0s 1;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes gradient {
+  to {
+    background: linear-gradient(0deg, rgba(255,200,114,1) 0%, rgba(0,107,187,1) 100%);
+  }
+
+ 
+  from {
+    background: linear-gradient(0deg, rgba(255,200,114,1) 0%, rgba(0,107,187,1) 100%);
+  }
+}
+@-webkit-keyframes gradient {
+  to {
+    background: linear-gradient(0deg, rgba(255,200,114,1) 0%, rgba(0,107,187,1) 100%);
+  }
+
+ 
+  from {
+    background: linear-gradient(0deg, rgba(255,200,114,1) 0%, rgba(0,107,187,1) 100%);
+  }
 }
 
 //---------------------------------------
@@ -283,6 +342,9 @@ a:hover {
   height: 250px !important;
 }
 
+//---------------------------------------
+// Sección Flotante
+//---------------------------------------
 
 
 .flotante{
@@ -307,4 +369,189 @@ a:hover {
 
 .facebook{
   color:#3b5998!important; 
+}
+
+//---------------------------------------
+// Sección Top Scroll
+//---------------------------------------
+
+#button {
+  display: inline-block;
+  background-color: $secundario;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: $fondo;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: $terciario;
+}
+#button:active {
+  background-color: $terciario;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+//---------------------------------------
+// Sección 1 Hero - Lavadoras
+//---------------------------------------
+
+.hero1lavadoras {
+  height: 40vh;
+  background-image: url("/assets/img/lavadora/lavadora.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial;
+}
+
+.bg-hero-lavadoras {
+  height: 450px;
+}
+
+ul li.marca::before {
+  content: "";
+  background-image: url("/assets/img/ok.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem;
+}
+
+
+//---------------------------------------
+// Sección 1 Hero - Refrigeradores
+//---------------------------------------
+
+.hero1refrigerador {
+  height: 40vh;
+  background-image: url("/assets/img/refrigerador/refrigerador.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial;
+}
+
+.bg-hero-refrigerador {
+  height: 450px;
+}
+
+ul li.marca::before {
+  content: "";
+  background-image: url("/assets/img/ok.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem;
+}
+
+//---------------------------------------
+// Sección 1 Hero - Aire
+//---------------------------------------
+
+.hero1aire {
+  height: 40vh;
+  background-image: url("/assets/img/acondicionado/aire.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial;
+}
+
+.hero2aire {
+  height: 40vh;
+  background-image: url("/assets/img/acondicionado/mini.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: initial;
+}
+
+.bg-hero-aire {
+  height: 450px;
+}
+
+ul li.marca::before {
+  content: "";
+  background-image: url("/assets/img/ok.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem;
+}
+
+
+
+//---------------------------------------
+// Sección 1 Hero - Lavavajillas
+//---------------------------------------
+
+.hero1lavavajilla {
+  height: 40vh;
+  background-image: url("/assets/img/lavavajillas/lavavajillas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial;
+}
+
+.hero2lavavajilla {
+  height: 40vh;
+  background-image: url("/assets/img/lavavajillas/estufa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial;
+}
+
+.bg-hero-lavavajilla {
+  height: 450px;
+}
+
+ul li.marca::before {
+  content: "";
+  background-image: url("/assets/img/ok.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem;
 }
