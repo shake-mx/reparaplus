@@ -71,7 +71,7 @@
               <h6>Garantía Escrito</h6>
             </div>
             <div class="col-12 col-lg-3 my-3">
-              <a href="tel:+525566286715">
+              <a href="tel:+523332809023">
                 <button type="button" class="redondeo boton">
                   ¡Agendar Servicio!
                 </button>
@@ -85,13 +85,9 @@
     <nav class="navbar navbar-light bg-fondo">
       <div class="container">
         <a class="navbar-brand logo-brand" href="/index.html">
-          <img
-            src="/assets/img/logo.png"
-            alt="Bold Creative Studio"
-            class="img-fluid"
-          />
+          <img src="/assets/img/logo.png" alt="Reparaplus" class="img-fluid" />
         </a>
-        <button
+        <a
           class="navbar-toggler"
           type="button"
           data-bs-toggle="offcanvas"
@@ -101,12 +97,13 @@
           aria-label="Mostrar Menu Navegación"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </a>
       </div>
       <div
         class="offcanvas offcanvas-end rightcanvas"
         id="offcanvasRight"
         tabindex="-1"
+        data-bs-scroll="true"
       >
         <div>
           <button
@@ -114,6 +111,7 @@
             class="btn-close text-reset"
             data-bs-dismiss="offcanvas"
             aria-label="Cerrar"
+            data-bs-target="#offcanvasRight"
           ></button>
         </div>
         <div class="offcanvas-body">
@@ -140,16 +138,24 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="/lavadoras.html">Lavadoras y Secadoras</a>
+                  <a class="dropdown-item" href="/lavadoras.html"
+                    >Lavadoras y Secadoras</a
+                  >
                 </li>
-                <li><a class="dropdown-item" href="/refrigeradores.html">Refrigeradores</a></li>
                 <li>
-                  <a class="dropdown-item" href="/aireacondicionado.html"
+                  <a class="dropdown-item" href="/refrigeradores.html"
+                    >Refrigeradores</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#inicioaire"
                     >Aire Acondicionado y Minisplit</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/lavavajillas.html">Estufas y Lavavajillas</a>
+                  <a class="dropdown-item" href="/lavavajillas.html"
+                    >Estufas y Lavavajillas</a
+                  >
                 </li>
               </ul>
             </li>
@@ -170,19 +176,24 @@
     <!-- FLOTANTES -->
     <div class="flotante">
       <div class="div-flotante bg-fondo">
-        <a href="tel:+525566286715">
+        <a
+          href="https://wa.me/5213310691674?text=Hola%20Reparaplus%20"
+          target="__blank"
+        >
           <i class="whatsapp fab fa-whatsapp fa-2x m-2"></i>
         </a>
         <br />
-        <a href="tel:+525566286715">
+        <a href="https://www.facebook.com/tecnicoscapacitados" target="__blank">
           <i class="facebook fab fa-facebook-f fa-2x m-2"></i>
         </a>
         <br />
-        <a href="tel:+525566286715">
+        <a href="tel:+523332809023">
           <i class="color-secundario fas fa-phone fa-2x m-2"></i>
         </a>
         <br />
-        <a href="tel:+525566286715">
+        <a
+          href="mailto:citas@reparaplus.com?Subject=Cita%20de%20servicio%20Reparaplus"
+        >
           <i class="color-secundario fas fa-envelope fa-2x m-2"></i>
         </a>
       </div>
@@ -192,32 +203,31 @@
 
     <!-- INICIO TOP SCROLL -->
 
-    <a id="button"></a>
+    <a id="topscroll"></a>
 
     <!-- FIN TOP SCROLL  -->
-
     <section id="inicioaire">
       <div
         class="carousel slide carousel-fade"
         data-bs-ride="carousel"
         id="carruselhero"
       >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carruselhero"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carruselhero"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        >
-      </div>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carruselhero"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carruselhero"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
 
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -230,8 +240,8 @@
                     <h2>Aire Acondicionado</h2>
                     <h5>Evita descomposturas costosas</h5>
                     <div class="row">
-                      <div class="col-6 col-lg-4">
-                        <a href="tel:+525566286715">
+                      <div class="col-6 col-lg-6">
+                        <a href="tel:+523332809023">
                           <button type="button" class="redondeo boton w-100">
                             ¡Llama Ya!
                           </button>
@@ -244,7 +254,7 @@
             </div>
           </div>
 
-          <div class="carousel-item ">
+          <div class="carousel-item">
             <div class="hero2aire">
               <div class="container">
                 <div class="row align-items-center bg-hero-aire">
@@ -254,8 +264,8 @@
                     <h2>Minisplit</h2>
                     <h5>Controla el clima de tu habitación</h5>
                     <div class="row">
-                      <div class="col-6 col-lg-4">
-                        <a href="tel:+525566286715">
+                      <div class="col-6 col-lg-6">
+                        <a href="tel:+523332809023">
                           <button type="button" class="redondeo boton w-100">
                             ¡Llama Ya!
                           </button>
@@ -267,7 +277,6 @@
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
@@ -362,22 +371,20 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2 class="text-center color-fondo pt-3">Aire Acondicionado y Minisplit</h2>
+              <h2 class="text-center color-fondo pt-3">
+                Aire Acondicionado y Minisplit
+              </h2>
               <h6 class="color-secundario text-center">
-                <strong>Te presentamos una lista de servicios detallados</strong>
+                <strong
+                  >Te presentamos una lista de servicios detallados</strong
+                >
               </h6>
             </div>
             <div class="col-12 my-3 color-fondo">
               <ul>
-                <li class="marca">
-                  Instalación y conexión tomas de agua 
-                </li>
-                <li class="marca">
-                  Mantenimiento preventivo y correctivo
-                </li>
-                <li class="marca">
-                  Cambio en el refrigerante por escarcha
-                </li>
+                <li class="marca">Instalación y conexión tomas de agua</li>
+                <li class="marca">Mantenimiento preventivo y correctivo</li>
+                <li class="marca">Cambio en el refrigerante por escarcha</li>
                 <li class="marca">
                   Limpieza tubos de desagüe y filtro de agua
                 </li>
@@ -392,10 +399,9 @@
                 </li>
                 <li class="marca">
                   Sustitución de elementos de plástico por dilatación
-                 </li>
+                </li>
               </ul>
             </div>
-           
           </div>
         </div>
       </div>
@@ -412,10 +418,12 @@
         <div class="row">
           <div class="col-12 order-md-1 text-center">
             <h5>Cuida tu inversión <i class="fas fa-dollar-sign"></i></h5>
-            <h2><strong>¡Controla la climatización de tus espacios!</strong></h2>
+            <h2>
+              <strong>¡Controla la climatización de tus espacios!</strong>
+            </h2>
             <h6>Solicita una revisión integral de tus equipos</h6>
             <div class="col-6 col-lg-4 mx-auto">
-              <a href="tel:+525566286715">
+              <a href="tel:+523332809023">
                 <button type="button" class="redondeo boton w-100">
                   Agendar visita <i class="far fa-calendar-alt"></i>
                 </button>
@@ -425,12 +433,9 @@
         </div>
       </div>
     </section>
-    <br>
-    <br>
+    <br />
+    <br />
 
-    
-
-    
     <section id="beneficios">
       <div class="container-fluid bg-primario color-fondo">
         <div class="container">
@@ -440,7 +445,7 @@
               <h6 class="text-center color-secundario">
                 <strong
                   >Te presentamos los beneficios que obtienes al contratar
-                  Studio Creative
+                  Reparaplus
                 </strong>
               </h6>
             </div>
@@ -499,10 +504,10 @@
               Tuve problemas con la lavadora que había sido un regalo de bodas,
               era inicio de clases, y estabamos llenos de gastos, no contaba con
               presupuesto para renovar el equipo, fue entonces que llame a
-              Studio Creative, acudieron a mi domicilio el mismo día y me
-              resolvieron todos los problemas. y con una reparación de ellos
-              recupere mi lavadora, el ciclo escolar ya va a la mitad y no he
-              tenido problema alguno con el equipo.
+              Reparaplus, acudieron a mi domicilio el mismo día y me resolvieron
+              todos los problemas, con una reparación de ellos recupere mi
+              lavadora, el ciclo escolar ya va a la mitad y no he tenido
+              problema alguno con el equipo.
             </h6>
             <p class="card-text color-secundario text-center">
               Maria Hernández
@@ -520,10 +525,10 @@
               Acababa de realizar las compras de mi despensa quincenal por la
               noche, mi esposa y yo trabajamos y solo por las tardes podemos
               realizarlas, al llegar a casa el refrigerador no funcionaba, no
-              podía dejar las cosas a la intermperie, y menos pedir un día de
-              trabajo para solucionarlo, llame a Studio Creative y para mi
-              sorpresa más tarde me visitaron e hicieron la reparación si cargo
-              extra, el refrigerador hoy sigue sin probelmas.
+              podía dejar las cosas a la intemperie, y menos pedir un día de
+              trabajo para solucionarlo, llame a Reparaplus y para mi sorpresa
+              más tarde me visitaron e hicieron la reparación sin cargo extra,
+              el refrigerador hoy sigue sin problemas.
             </h6>
             <p class="card-text color-secundario text-center">
               Pedro Antonio Flores
@@ -540,14 +545,14 @@
               </strong>
             </h5>
             <h6 class="card-text">
-              En las instalaciones de la empresa en primaver siempre el calor es
-              un problema, hemos detectado que el rendimiento deñ personal
-              dsminuye cuando las temperaturas son elevadas, por un año se quedo
-              pendiente la reparación de aire acondicionado, sin embargo el
-              último año acudimos con Stduio Creative, ellos no inflaron los
+              En las instalaciones de la empresa en primavera siempre el calor
+              es un problema, hemos detectado que el rendimiento del personal
+              disminuye cuando las temperaturas son elevadas, por un año se
+              quedo pendiente la reparación de aire acondicionado, sin embargo
+              el último año acudimos con Reparaplus, ellos no inflaron los
               precios y nos ayudaron a reparar el sistema de aire acondicionado
               por completo, actualmente contamos con una póliza de servicio para
-              garantizar el mantenimiento de nuestros equipos.
+              garantizar el mantenimiento y funcionamiento de nuestros equipos.
             </h6>
             <p class="card-text color-secundario text-center">
               Minerva Astudillo
@@ -572,7 +577,7 @@
               <a class="navbar-brand logo-brand" href="/index.html">
                 <img
                   src="/assets/img/logo_letra.png"
-                  alt="Bold Creative Studio"
+                  alt="Reparaplus"
                   class="footer-logo"
                 />
               </a>
@@ -591,18 +596,34 @@
             <div class="col-md-4 my-3">
               <h5 class="color-secundario"><strong>Contacto</strong></h5>
 
-              <h6><i class="fas fa-phone fa-1x"></i> +52 (33) 3333-3333</h6>
-              <h6><i class="fab fa-whatsapp fa-1x"></i> +52 (33) 3333-3333</h6>
-              <h6><i class="fab fa-facebook-square"></i> Studio Creative</h6>
-
-              <h6>
-                <i class="fas fa-envelope fa-1x"></i> hola@studiocreative.mx
-              </h6>
+              <a href="tel:+523332809023">
+                <h6><i class="fas fa-phone fa-1x"></i> +52 (33) 3280-9023</h6>
+              </a>
+              <a
+                href="https://wa.me/5213310691674?text=Hola%20Reparaplus%20"
+                target="__blank"
+                ><h6>
+                  <i class="fab fa-whatsapp fa-1x"></i> +52 (33) 1069-1674
+                </h6></a
+              >
+              <a
+                href="https://www.facebook.com/tecnicoscapacitados"
+                target="__blank"
+              >
+                <h6><i class="fab fa-facebook-square"></i> Reparaplus</h6>
+              </a>
+              <a
+                href="mailto:citas@reparaplus.com?Subject=Solicitud%20de%20servicio%20Reparaplus"
+              >
+                <h6>
+                  <i class="fas fa-envelope fa-1x"></i> citas@reparaplus.com
+                </h6>
+              </a>
               <h6>
                 <i class="fas fa-map-marker-alt fa-1x"></i> Zapopan, Jalisco
               </h6>
               <h6>
-                <i class="fas fa-clock fa-1x"></i> Lunes a Viernes de 9:00 a
+                <i class="fas fa-clock fa-1x"></i> Lunes a Sábado de 9:00 a
                 18:00
               </h6>
             </div>

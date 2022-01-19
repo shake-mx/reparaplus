@@ -87,6 +87,10 @@ a:hover {
 .logo-brand {
   max-width: 5% !important;
 }
+
+div.rightcanvas{
+  max-width: 50% !important;
+}
 @media only screen and(max-width: 540px) {
   .logo-brand {
     max-width: 35% !important;
@@ -103,6 +107,7 @@ a:hover {
   .logo-brand {
     max-width: 15% !important;
   }
+
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -320,13 +325,20 @@ background-color: rgba($color: $fondo, $alpha: 0.6);
 
 .bg-faqs {
   padding-bottom: 100px;
-  border-bottom-left-radius: 90% 20%;
+  border-bottom-left-radius: 60% 40%;
   border-bottom-right-radius: 100% 0%;
   border-top-left-radius: 100% 0%;
-  border-top-right-radius: 90% 20%;
+  border-top-right-radius: 60% 40%;
   
 }
 
+
+@media only screen and (max-width: 540px) {
+  .bg-faqs  {
+    border-bottom-left-radius: 95% 5%;
+    border-top-right-radius: 95% 5%;
+  }
+}
 
 
 //---------------------------------------
@@ -375,7 +387,7 @@ background-color: rgba($color: $fondo, $alpha: 0.6);
 // Sección Top Scroll
 //---------------------------------------
 
-#button {
+#topscroll {
   display: inline-block;
   background-color: $secundario;
   width: 50px;
@@ -391,7 +403,7 @@ background-color: rgba($color: $fondo, $alpha: 0.6);
   visibility: hidden;
   z-index: 1000;
 }
-#button::after {
+#topscroll::after {
   content: "\f077";
   font-family: FontAwesome;
   font-weight: normal;
@@ -400,14 +412,14 @@ background-color: rgba($color: $fondo, $alpha: 0.6);
   line-height: 50px;
   color: $fondo;
 }
-#button:hover {
+#topscroll:hover {
   cursor: pointer;
   background-color: $terciario;
 }
-#button:active {
+#topscroll:active {
   background-color: $terciario;
 }
-#button.show {
+#topscroll.show {
   opacity: 1;
   visibility: visible;
 }
