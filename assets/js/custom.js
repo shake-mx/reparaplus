@@ -83,12 +83,3 @@ if(window.matchMedia("(min-width: 1400px)").matches){
 
 
 
-window.onload = function() {
-  var myModalGracias = new bootstrap.Modal(
-    document.getElementById("modalGracias"),
-    {}
-  );
-  myModalGracias.show();
-
-
-};
