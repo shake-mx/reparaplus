@@ -70,10 +70,10 @@ div.rightcanvas {
 
 @media only screen and (max-width: 992px) {
   .logo-brand {
-    min-width: 10% !important; } }
+    min-width: 15% !important; } }
 @media only screen and (max-width: 540px) {
   .logo-brand {
-    min-width: 13% !important; } }
+    min-width: 20% !important; } }
 .navbar-light .navbar-toggler-icon {
   background-image: url("/assets/img/menu.png") !important;
   border-color: transparent !important;
