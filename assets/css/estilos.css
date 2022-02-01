@@ -63,20 +63,17 @@ a:hover {
   color: #fefffe; }
 
 .logo-brand {
-  max-width: 5% !important; }
+  width: 7% !important; }
 
 div.rightcanvas {
   max-width: 50% !important; }
 
-@media only screen and (max-width: 540px) {
-  .logo-brand {
-    max-width: 35% !important; } }
-@media only screen and (max-width: 720px) {
-  .logo-brand {
-    max-width: 35% !important; } }
 @media only screen and (max-width: 992px) {
   .logo-brand {
-    max-width: 15% !important; } }
+    min-width: 10% !important; } }
+@media only screen and (max-width: 540px) {
+  .logo-brand {
+    min-width: 13% !important; } }
 .navbar-light .navbar-toggler-icon {
   background-image: url("/assets/img/menu.png") !important;
   border-color: transparent !important;
@@ -277,6 +274,9 @@ div.rightcanvas {
   z-index: 9999;
   -webkit-transform: translate(0px, -50%);
           transform: translate(0px, -50%); }
+
+.logo-flotante {
+  max-width: 75px !important; }
 
 .div-flotante {
   max-width: 150px !important;

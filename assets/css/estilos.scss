@@ -85,30 +85,28 @@ a:hover {
 //---------------------------------------
 
 .logo-brand {
-  max-width: 5% !important;
+  width: 7% !important;
 }
 
 div.rightcanvas{
   max-width: 50% !important;
 }
-@media only screen and(max-width: 540px) {
-  .logo-brand {
-    max-width: 35% !important;
-  }
-}
-
-@media only screen and(max-width: 720px) {
-  .logo-brand {
-    max-width: 35% !important;
-  }
-}
 
 @media only screen and (max-width: 992px) {
   .logo-brand {
-    max-width: 15% !important;
+    min-width: 10% !important;
   }
 
 }
+
+
+@media only screen and(max-width: 540px) {
+  .logo-brand {
+    min-width: 13% !important;
+  }
+}
+
+
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("/assets/img/menu.png") !important;
@@ -369,12 +367,19 @@ background-color: rgba($color: $fondo, $alpha: 0.6);
   
 }
 
+.logo-flotante {
+  max-width: 75px !important;
+
+}
+
 .div-flotante{
   max-width: 150px!important;
   max-height: auto!important;
   border-radius: 10px 0px 0px 10px;
   text-align: center;
 }
+
+
 
 .whatsapp{
   color:#25d366!important; 
