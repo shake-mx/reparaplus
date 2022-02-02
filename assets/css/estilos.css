@@ -64,7 +64,7 @@ a:hover {
 
 .font-nav {
   font-family: 'Alfa Slab One', cursive;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #006BBB !important; }
 
@@ -72,7 +72,7 @@ a:hover {
   width: 7% !important; }
 
 div.rightcanvas {
-  max-width: 50% !important; }
+  max-width: 60% !important; }
 
 @media only screen and (max-width: 992px) {
   .logo-brand {
