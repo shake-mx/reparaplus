@@ -30,7 +30,6 @@ if(window.matchMedia("(min-width: 1400px)").matches){
       
     } else {
       document.getElementById("navbar").style.top = "120px";
-      document.getElementById("navbar").style.backgroundColor = "blue";
     }
   }
 }else if(window.matchMedia("(min-width: 1200px)").matches){ 
@@ -40,50 +39,36 @@ if(window.matchMedia("(min-width: 1400px)").matches){
       
     } else {
       document.getElementById("navbar").style.top = "140px";
-      document.getElementById("navbar").style.backgroundColor = "red";
 
     }
   }
-}else if(window.matchMedia("(min-width: 992px)").matches){ 
+}else if(window.matchMedia('(min-width: 992px)').matches){ 
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("navbar").style.top = "0";
+      document.getElementById('navbar').style.top = '0';
       
       
     } else {
-      document.getElementById("navbar").style.top = "150px";
-      document.getElementById("navbar").style.backgroundColor = "pink";
+      document.getElementById('navbar').style.top = '150px';
 
     }
   }
-}else if(window.matchMedia("(min-width: 768px)").matches){ 
+}else if(window.matchMedia('(min-width: 768px)').matches){ 
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("navbar").style.top = "0";
+      document.getElementById('navbar').style.top = '0';
       
     } else {
-      document.getElementById("navbar").style.top = "220px";
-      document.getElementById("navbar").style.backgroundColor = "yellow";
+      document.getElementById('navbar').style.top = '220px';
     }
   }
-}else if(window.matchMedia("(min-width: 576px)").matches){ 
+}else if(window.matchMedia('(min-width: 576px)').matches){ 
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("navbar").style.top = "0";
+      document.getElementById('navbar').style.top = '0';
       
     } else {
-      document.getElementById("navbar").style.top = "120px";
-      document.getElementById("navbar").style.backgroundColor = "brown";
-    }
-  }
-}else if(window.matchMedia("(min-width: 320px)").matches){
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("navbar").style.top = "0";
-      
-    } else {
-      document.getElementById("navbar").style.top = "150px";
-      document.getElementById("navbar").style.backgroundColor = "orange";
+      document.getElementById('navbar').style.top = '120px';
     }
   }
 }
