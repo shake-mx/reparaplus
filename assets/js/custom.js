@@ -30,6 +30,7 @@ if(window.matchMedia("(min-width: 1400px)").matches){
       
     } else {
       document.getElementById("navbar").style.top = "120px";
+      document.getElementById("navbar").style.backgroundColor = "blue";
     }
   }
 }else if(window.matchMedia("(min-width: 1200px)").matches){ 
@@ -39,6 +40,7 @@ if(window.matchMedia("(min-width: 1400px)").matches){
       
     } else {
       document.getElementById("navbar").style.top = "140px";
+      document.getElementById("navbar").style.backgroundColor = "red";
 
     }
   }
@@ -50,6 +52,8 @@ if(window.matchMedia("(min-width: 1400px)").matches){
       
     } else {
       document.getElementById("navbar").style.top = "150px";
+      document.getElementById("navbar").style.backgroundColor = "pink";
+
     }
   }
 }else if(window.matchMedia("(min-width: 768px)").matches){ 
@@ -59,6 +63,7 @@ if(window.matchMedia("(min-width: 1400px)").matches){
       
     } else {
       document.getElementById("navbar").style.top = "220px";
+      document.getElementById("navbar").style.backgroundColor = "yellow";
     }
   }
 }else if(window.matchMedia("(min-width: 576px)").matches){ 
@@ -68,15 +73,17 @@ if(window.matchMedia("(min-width: 1400px)").matches){
       
     } else {
       document.getElementById("navbar").style.top = "120px";
+      document.getElementById("navbar").style.backgroundColor = "brown";
     }
   }
-}else{
+}else if(window.matchMedia("(min-width: 320px)").matches){
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById("navbar").style.top = "0";
       
     } else {
-      document.getElementById("navbar").style.top = "120px";
+      document.getElementById("navbar").style.top = "150px";
+      document.getElementById("navbar").style.backgroundColor = "orange";
     }
   }
 }
