@@ -76,7 +76,7 @@ if(window.matchMedia("(min-width: 1400px)").matches){
       document.getElementById("navbar").style.top = "0";
       
     } else {
-      document.getElementById("navbar").style.top = "150px";
+      document.getElementById("navbar").style.top = "120px";
     }
   }
 }
