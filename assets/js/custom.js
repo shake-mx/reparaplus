@@ -20,10 +20,10 @@ btn.on('click', function(e) {
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = function() {scrollFunction()};
 
-
+function scrollFunction() {
 
 if(window.matchMedia('(max-width: 480px)').matches){
-  function scrollFunction() {
+  
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById('navbar').style.top = '0';
       
@@ -31,9 +31,8 @@ if(window.matchMedia('(max-width: 480px)').matches){
     } else {
       document.getElementById('navbar').style.top = '140px';
     }
-  };
 }else if(window.matchMedia('(max-width: 576px)').matches){
-  function scrollFunction() {
+  
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById('navbar').style.top = '0';
       
@@ -41,34 +40,30 @@ if(window.matchMedia('(max-width: 480px)').matches){
     } else {
       document.getElementById('navbar').style.top = '120px';
     }
-  };
 
 }else if(window.matchMedia('(max-width: 768px)').matches){
-  function scrollFunction() {
+  
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById('navbar').style.top = '0';
       
       
     } else {
-      document.getElementById('navbar').style.top = '220px';
-      document.getElementById('navbar').style.backgroundColor = 'blue';
+      document.getElementById('navbar').style.top = '140px';
+      
     }
-  };
 
 }else if(window.matchMedia('(max-width: 992px)').matches){
-  function scrollFunction() {
+  
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById('navbar').style.top = '0';
       
       
     } else {
       document.getElementById('navbar').style.top = '220px';
-      document.getElementById('navbar').style.backgroundColor = 'red';
     }
-  };
 
 }else if(window.matchMedia('(max-width: 1200px)').matches){
-  function scrollFunction() {
+  
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById('navbar').style.top = '0';
       
@@ -76,10 +71,9 @@ if(window.matchMedia('(max-width: 480px)').matches){
     } else {
       document.getElementById('navbar').style.top = '140px';
     }
-  };
 
 }else if(window.matchMedia('(max-width: 1400px)').matches){
-  function scrollFunction() {
+  
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById('navbar').style.top = '0';
       
@@ -87,10 +81,9 @@ if(window.matchMedia('(max-width: 480px)').matches){
     } else {
       document.getElementById('navbar').style.top = '140px';
     }
-  };
 
 }else {
-  function scrollFunction() {
+  
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById('navbar').style.top = '0';
       
@@ -98,5 +91,5 @@ if(window.matchMedia('(max-width: 480px)').matches){
     } else {
       document.getElementById('navbar').style.top = '120px';
     }
-  };
+}
 }

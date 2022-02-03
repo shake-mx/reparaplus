@@ -63,6 +63,10 @@ li{
   border: none;
   box-shadow: transparent !important;
 }
+[type=button], [type=reset], [type=submit], button{
+  -webkit-appearance: button-bevel;
+}
+
 
 .boton {
   background-color: $secundario !important;
