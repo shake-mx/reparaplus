@@ -50,7 +50,7 @@ if(window.matchMedia('(max-width: 480px)').matches){
       
       
     } else {
-      document.getElementById('navbar').style.top = '120px';
+      document.getElementById('navbar').style.top = '140px';
     }
   };
 
